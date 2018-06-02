@@ -7,6 +7,7 @@ function BotLoader(gameServer,botAmount) {
 	this.gameServer = gameServer;
 	
 	// Names
+	this.randomNames = [];
 	this.nameIndex = 0;
 	
 	for (var i = 0; i < botAmount; i++) {
