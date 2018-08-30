@@ -16,7 +16,7 @@ Virus.prototype.calcMove = function () {
 Virus.prototype.feed = function(feeder,gameServer) {
     this.setAngle(feeder.getAngle()); // Set direction if the virus explodes
     this.mass += 14; // 7 cells to burst the virus
-   // gameServer.removeNode(feeder);
+ gameServer.removeNode(feeder);
 	
     // Check if the virus is going to explode
     if (this.mass >= gameServer.config.virusBurstMass) {
