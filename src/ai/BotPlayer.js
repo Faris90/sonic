@@ -2,8 +2,7 @@ var PlayerTracker = require('../PlayerTracker');
 
 function BotPlayer() {
 	PlayerTracker.apply(this, Array.prototype.slice.call(arguments));
-	//this.color = gameServer.getRandomColor();
-	
+    this.color = { r: 86, g: 88, b: 91 };	
 	// AI only
 	this.gameState = 0;
 	this.predators = []; // List of cells that can eat this bot
