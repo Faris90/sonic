@@ -212,22 +212,22 @@ Cell.prototype.calcMove = function(x2, y2, gameServer) {
     
     // Check to ensure we're not passing the world border
     if (x1 < config.borderLeft) {
-         if(this.name !== "   ‍   ") {
+         if(this.name != "   ‍   ") {
 	    x1 = config.borderLeft;
 	 }
     }
 	if (x1 > config.borderRight) {
-         if(this.name !== "   ‍   ") {
+         if(this.name != "   ‍   ") {
 		x1 = config.borderRight;
 	 }
     }
     if (y1 < config.borderTop) {
-          if(this.name !== "   ‍   ") {
+          if(this.name != "   ‍   ") {
 	    y1 = config.borderTop;
 	  }
     }
     if (y1 > config.borderBottom) {
-          if(this.name !== "   ‍   ") {
+          if(this.name != "   ‍   ") {
 	    y1 = config.borderBottom;
 	  }
     }
