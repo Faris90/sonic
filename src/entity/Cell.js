@@ -60,7 +60,7 @@ Cell.prototype.getSpeed = function() {
 	// Old formula: 5 + (20 * (1 - (this.mass/(70+this.mass))));
 	// Based on 50ms ticks. If updateMoveEngine interval changes, change 50 to new value
 	// (should possibly have a config value for this?)
-	return 7*745.28 /* * Math.pow(this.mass, -0.222) * 50 / 1000;*/
+	return 10*745.28* Math.pow(this.mass, -0.222) * 50 / 1000;
 }
 
 Cell.prototype.setAngle = function(radians) {
